@@ -1,4 +1,5 @@
 
+import { CollaboratorCard } from '@/components/CollaboratorCard';
 import { Header } from '@/components/Header';
 import { Section } from '@/components/Section';
 import { Title } from '@/components/Title';
@@ -56,40 +57,23 @@ export default function Home() {
             <Title className='text-center md:text-left'>
             Quem vai resolver os seus problemas inerentemente complexos?
             </Title>
-            <div className='flex flex-col items-center md:flex-row md:items-start'>
-              <div className='w-1/2 min-w-[12rem]'>
-                <div className='border-2 border-primary w-fit mx-auto'>
-                  <Image
-                    src={'/hindemburg.svg'}
-                    alt='Lisp Solutions'
-                    width={230}
-                    height={230}
-                    blurDataURL="/hindemburgBlur.jpg"
-                    placeholder="blur"
-                    priority
-                    quality={1}
-                  />
-                </div>
-              </div>
-              <div className='md:ml-8 flex flex-col justify-center items-center md:items-start'>
-                <Title marginButtom={0} className="mt-2 md:mt-0 text-center">
-                Hindemburg Melão Jr.
-                </Title>
-                <span className='text-primary text-normal text-center'>Consultor Polímata Técnico-Cientifico</span>
-                <p className='text-[#423E3E] text-normal font-medium text-ellipsis overflow-hidden line-clamp-4 md:line-clamp-5 mt-2 text-center md:text-justify'>
-                Maior QI registrado no Brasil, recordista de xadrez as cegas e Autor de inovações e melhorias relevantes
+            <CollaboratorCard
+              photo={{
+                src: '/hindemburg.svg',
+                alt: '/Hindemburg Melão Jr. Photo',
+                blurDataURL: '/hindemburgBlur.jpg',
+                width: 230,
+                quality: 80,
+              }}
+              collaborator={{
+                name: 'Hindemburg Melão Jr. Photo',
+                title: 'Consultor Polímata Técnico-Cientifico',
+                description: `Maior QI registrado no Brasil, recordista de xadrez as cegas e Autor de inovações e melhorias relevantes
                 em vários campos científicos, financeiros e educacionais, incluindo melhorias nas obras dos ganhadores do
-                Prêmio Nobel William Sharpe, Franco Modigliani, Harry Markowitz, Myron Scholes e outros.
-                </p>
-                <a
-                  href='https://www.sigmasociety.net/hm'
-                  target='_blank'
-                  className='text-primary hover:underline'
-                >
-                Saiba Mais
-                </a>
-              </div>
-            </div>
+                Prêmio Nobel William Sharpe, Franco Modigliani, Harry Markowitz, Myron Scholes e outros.`
+              }}
+              buttonHref='https://www.sigmasociety.net/hm'
+            />
           </>
         </Section>
       </main>
