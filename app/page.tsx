@@ -1,5 +1,6 @@
 
 import { CollaboratorCard } from '@/components/CollaboratorCard';
+import { Form } from '@/components/Form';
 import { Header } from '@/components/Header';
 import { Section } from '@/components/Section';
 import { Title } from '@/components/Title';
@@ -55,7 +56,7 @@ export default function Home() {
         <Section>
           <>
             <Title className='text-center md:text-left'>
-            Quem vai resolver os seus problemas inerentemente complexos?
+              Quem vai resolver os seus problemas inerentemente complexos?
             </Title>
             <CollaboratorCard
               photo={{
@@ -74,6 +75,12 @@ export default function Home() {
               }}
               buttonHref='https://www.sigmasociety.net/hm'
             />
+          </>
+        </Section>
+        <Section>
+          <>
+            <Title className='text-center md:text-left'>Entre em contato</Title>
+            <Form/>
           </>
         </Section>
       </main>
