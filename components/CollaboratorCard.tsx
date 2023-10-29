@@ -39,7 +39,7 @@ export const CollaboratorCard: FC<ICollaboratorCard> = ({ photo, collaborator, b
           </div>
         </div>
         <div className='md:ml-8 flex flex-col justify-center items-center md:items-start'>
-          <Title marginButtom={0} className="mt-2 md:mt-0 text-center">
+          <Title style={{marginBottom: 0}} className="mt-2 md:mt-0 text-center">
             {collaborator.name}
           </Title>
           <span className='text-primary text-normal text-center'>{collaborator.title}</span>
