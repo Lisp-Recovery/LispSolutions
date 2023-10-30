@@ -51,28 +51,26 @@ export default function Home() {
         </article>
       </Section>
       <Section>
-        <>
-          <Title className='text-center md:text-left'>
-            Quem vai resolver os seus problemas inerentemente complexos?
-          </Title>
-          <CollaboratorCard
-            photo={{
-              src: '/hindemburg.svg',
-              alt: '/Hindemburg Melão Jr. Photo',
-              blurDataURL: '/hindemburgBlur.jpg',
-              width: 230,
-              quality: 80,
-            }}
-            collaborator={{
-              name: 'Hindemburg Melão Jr. Photo',
-              title: 'Consultor Polímata Técnico-Cientifico',
-              description: `Maior QI registrado no Brasil, recordista de xadrez as cegas e Autor de inovações e melhorias relevantes
-              em vários campos científicos, financeiros e educacionais, incluindo melhorias nas obras dos ganhadores do
-              Prêmio Nobel William Sharpe, Franco Modigliani, Harry Markowitz, Myron Scholes e outros.`
-            }}
-            buttonHref='https://www.sigmasociety.net/hm'
-          />
-        </>
+        <Title className='text-center md:text-left'>
+          Quem vai resolver os seus problemas inerentemente complexos?
+        </Title>
+        <CollaboratorCard
+          photo={{
+            src: '/hindemburg.svg',
+            alt: '/Hindemburg Melão Jr. Photo',
+            blurDataURL: '/hindemburgBlur.jpg',
+            width: 230,
+            quality: 80,
+          }}
+          collaborator={{
+            name: 'Hindemburg Melão Jr. Photo',
+            title: 'Consultor Polímata Técnico-Cientifico',
+            description: `Maior QI registrado no Brasil, recordista de xadrez as cegas e Autor de inovações e melhorias relevantes
+            em vários campos científicos, financeiros e educacionais, incluindo melhorias nas obras dos ganhadores do
+            Prêmio Nobel William Sharpe, Franco Modigliani, Harry Markowitz, Myron Scholes e outros.`
+          }}
+          buttonHref='https://www.sigmasociety.net/hm'
+        />
       </Section>
     </main>
   );
