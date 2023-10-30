@@ -74,10 +74,8 @@ export default function Home() {
         />
       </Section>
       <Section>
-          <>
-            <Title className='text-center md:text-left'>Entre em contato</Title>
-            <Form/>
-          </>
+          <Title className='text-center md:text-left'>Entre em contato</Title>
+          <Form/>
       </Section>
     </main>
   );
