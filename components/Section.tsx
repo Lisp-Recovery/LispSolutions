@@ -1,8 +1,7 @@
-import { FC, HTMLAttributes } from "react";
+import { FC, HTMLAttributes, ReactNode } from "react";
 
-interface ISection extends HTMLAttributes<HTMLHeadingElement> {
-    children: JSX.Element | string;
-    marginButtom?: number;
+interface ISection extends HTMLAttributes<HTMLElement> {
+    children: ReactNode;
 }
 
 export const Section: FC<ISection> = ({ children,...props }) => {

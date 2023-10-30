@@ -1,6 +1,7 @@
 import Image, { ImageLoaderProps } from "next/image";
 import { Title } from "./Title";
 import { FC } from "react";
+import Link from "next/link";
 
 interface ICollaboratorCard {
   photo: Photo;
@@ -46,9 +47,9 @@ export const CollaboratorCard: FC<ICollaboratorCard> = ({ photo, collaborator, b
           <p className='text-[#423E3E] text-normal font-medium text-ellipsis overflow-hidden line-clamp-4 md:line-clamp-5 mt-2 text-center md:text-justify'>
             {collaborator.description}
           </p>
-          <a href={buttonHref} target='_blank' className='text-primary hover:underline'>
+          <Link href={buttonHref} target='_blank' className='text-primary hover:underline'>
             Saiba Mais
-          </a>
+          </Link>
         </div>
       </div>
     </div>
