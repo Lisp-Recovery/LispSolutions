@@ -45,9 +45,6 @@ export default function Home() {
               Quais indivíduos têm a maior capacidade de otimizar tais recursos na natureza humana?
               <span className=' text-primary'> Indivíduos com altas habilidades.</span>
             </strong>
-            <br/><br/>
-            Por esta razão, a simplicidade -- utilizando recursos de forma otimizada -- é a máxima sofisticação -- melhor
-            alocação dos recursos e tempo -- por isso, sempre buscamos fazer mais com menos.
           </p>
         </article>
       </Section>
@@ -72,10 +69,6 @@ export default function Home() {
           }}
           buttonHref='https://www.sigmasociety.net/hm'
         />
-      </Section>
-      <Section>
-          <Title className='text-center md:text-left'>Entre em contato</Title>
-          <Form/>
       </Section>
     </main>
   );
