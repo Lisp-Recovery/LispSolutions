@@ -21,14 +21,6 @@ export const metadata: Metadata = {
     }
   ],
   keywords: ['lisp solution', 'solutions', 'business solution'],
-  themeColor: [
-    {
-      color: '#fff',
-    },
-    {
-      color: '#074ca1'
-    }
-  ],
 };
 
 export default function RootLayout({

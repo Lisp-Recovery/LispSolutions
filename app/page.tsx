@@ -1,5 +1,6 @@
 
 import { CollaboratorCard } from '@/components/CollaboratorCard';
+import { Form } from '@/components/Form';
 import { Header } from '@/components/Header';
 import { Section } from '@/components/Section';
 import { Title } from '@/components/Title';
@@ -44,9 +45,6 @@ export default function Home() {
               Quais indivíduos têm a maior capacidade de otimizar tais recursos na natureza humana?
               <span className=' text-primary'> Indivíduos com altas habilidades.</span>
             </strong>
-            <br/><br/>
-            Por esta razão, a simplicidade -- utilizando recursos de forma otimizada -- é a máxima sofisticação -- melhor
-            alocação dos recursos e tempo -- por isso, sempre buscamos fazer mais com menos.
           </p>
         </article>
       </Section>
